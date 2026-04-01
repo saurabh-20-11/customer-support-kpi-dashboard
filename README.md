@@ -1,38 +1,88 @@
-# customer-support-kpi-dashboard
+# Customer Support KPI Dashboard
 
-Customer support KPI dashboard project using SQL, Python, and dashboard metric logic.
+A data analytics project focused on measuring customer support performance using SQL, structured datasets, and business KPI logic.
+
+---
 
 ## Project Overview
 
-This project analyzes customer support performance using realistic chatbot interaction data. It focuses on metrics commonly used in customer operations and support analytics, including containment rate, abandoned rate, agent connect rate, resolution rate, CSAT, and response time.
+This project analyzes customer support interactions using a simulated chatbot dataset. It focuses on real-world support metrics such as containment rate, abandonment, agent escalation, resolution, CSAT, and response time.
 
-The project is inspired by real-world customer support KPI reporting workflows.
+The goal is to demonstrate how support operations can be measured and improved using data.
+
+---
 
 ## Business Problem
 
-Customer support teams need to measure how effectively chatbot systems handle customer requests before escalating to agents. They also need to monitor customer satisfaction, resolution outcomes, and operational efficiency.
+Customer support teams need to answer:
 
-This project simulates that reporting workflow using sample datasets and KPI definitions.
+- How many queries can be handled by chatbot vs agents?
+- Where are customers dropping off?
+- What drives customer satisfaction?
+- How can support costs be reduced?
 
-## KPIs Included
+This project models those questions using structured data and KPI definitions.
 
-- Containment Rate
-- Abandoned Rate
-- Agent Connect Rate
-- Resolution Rate
-- CSAT
-- Average Response Time
-- Cost Per Contact
+---
+
+## Key Metrics
+
+- **Containment Rate** → Chats resolved without agent  
+- **Abandoned Rate** → Chats dropped by users  
+- **Agent Connect Rate** → Chats escalated to human  
+- **Resolution Rate** → Successfully resolved chats  
+- **CSAT** → Customer satisfaction score  
+- **Response Time** → Speed of chatbot responses  
+
+---
 
 ## Project Structure
 
-```text
 customer-support-kpi-dashboard/
 ├── data/
-│   ├── sample_chatbot_data.csv
-│   └── sample_transactions.csv
-├── dashboard/
-│   └── kpi_logic.md
+│ ├── sample_chatbot_data.csv
+│ └── sample_transactions.csv
 ├── sql/
-│   └── kpi_queries.sql
+│ └── kpi_queries.sql
+├── dashboard/
+│ ├── kpi_logic.md
+│ └── insights_summary.md
 ├── README.md
+
+---
+
+## SQL Analysis
+
+The project includes SQL queries to calculate:
+
+- Total chats
+- Containment rate
+- Abandonment rate
+- Agent connect rate
+- Resolution rate
+- Average CSAT
+- Response time
+- Issue distribution
+
+---
+
+## Key Insights
+
+- Chatbot handles a large share of routine queries → reduces cost  
+- Refund & technical issues drive agent escalation  
+- High response time increases abandonment  
+- CSAT strongly linked to resolution success  
+
+---
+
+## Tools Used
+
+- SQL  
+- Python (for data structuring)  
+- GitHub (project versioning and portfolio)  
+
+---
+
+## Resume Bullet
+
+Built a customer support KPI analysis project using SQL and structured datasets to evaluate containment, abandonment, agent transfer, resolution, CSAT, and response-time metrics, with business-driven insights for operational improvement.
